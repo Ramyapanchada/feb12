@@ -1,0 +1,32 @@
+chocolates=200
+ricebag=1000
+oil=200
+shampoo=170
+facewash=110
+soaps=250
+cname=input("enter customer name:")
+chocoq=int(input("enter no of choclolates:"))
+rbq=int(input("enter no of ricebags:"))
+oq=int(input("enter the no of oil packets:"))
+shampooq=int(input("enter the shampoo quantity:"))
+fwq=int(input("enter no of face wash quantity:"))
+soapq=int(input("enter the soap quantity:"))
+bill=(chocolates*chocoq)+(ricebag*rbq)+(oil*oq)+(shampoo*shampooq)
++(facewash*fwq)+(soaps*soapq)
+if bill>=5000:
+    dis=bill*10/100
+    tax=bill*18/100
+elif bill>=3000:
+    dis=bill*8/100
+    tax=bill*10/100
+elif bill>=2000:
+    dis=bill*5/100
+    tax=bill*10/100
+elif bill>=1000:
+     dis=bill*3/100
+     tax=bill*10/100
+else:
+    print("your cart is empty")
+mainbill=bill-dis+tax
+print("your bill is:")
+print(mainbill)
